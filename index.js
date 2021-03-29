@@ -28,6 +28,7 @@ class OpenAI {
         const data = Object.assign({},
             this._construct_parameter("prompt", opts.prompt),
             this._construct_parameter("stream", opts.stream),
+            this._construct_parameter("user", opts.user),
             this._construct_parameter("stop", opts.stop),
             this._construct_parameter("max_tokens", this._safe_cast(opts.maxTokens)),
             this._construct_parameter("temperature", this._safe_cast(opts.temperature)),
